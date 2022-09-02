@@ -11,13 +11,13 @@ $email = trim($_POST["email"]);
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.ukr.net';  					    // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'dumphouman@ukr.net'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'mamoosh15'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'mail adress'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'password'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('dumphouman@ukr.net'); 
-$mail->addAddress('hannabadr.11@gmail.com');    
+$mail->setFrom('from email'); 
+$mail->addAddress('to email');    
 
 $mail->isHTML(true);    
 
